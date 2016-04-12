@@ -1,0 +1,25 @@
+.bs-form{margin: 35px 0;}
+.bs-form .control-group{margin: 25px 0;}
+.bs-form input.form-control,#contact-form textarea.form-control,#contact-form select.form-control{width: 100%;display: block;box-shadow: none;}
+.bs-form #note { clear: both;float: left; margin-left: 140px;}
+.bs-form .req { color: #F00; font-size: 12px; margin-left: 5px; }
+.bs-form #note { margin-left: 140px; }
+.bsmsg{font-size: 14px;font-weight:300; }
+.bs-form input.valid { border-color: #00A400; }
+.bs-form input.error { background-color: #FFE8E8 !important; color: #ff0000 !important; border-color: #F00; }
+.bs-form .controls label.error { position: absolute; top: -5px; font-size: 10px; line-height: 100%; font-weight: normal; font-family: Tahoma, Geneva, sans-serif; color: #FFF; background: #CB2001; padding: 3px 5px; -moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius: 10px; }
+.bs-form textarea.error { background-color: #FFE8E8 !important; color: #ff0000 !important; border-color: #F00; }
+.bs-form .control-group label.error { position: absolute; top: -5px; font-size: 10px; line-height: 100%; font-weight: normal; font-family: Tahoma, Geneva, sans-serif; color: #FFF; background: #CB2001; padding: 3px 5px; -moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius: 10px; }
+.lt-ie8 .bs-form .control-group label.error { margin-left: 20px; }
+.bs-form .alert { padding: 8px 35px 8px 14px; margin-bottom: 20px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); background-color: #fcf8e3; border: 1px solid #fbeed5; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.bs-form .alert-success { background-color: #dff0d8; border-color: #d6e9c6; color: #468847; }
+.bloader{margin-right:15px;display:none;}
+ @media (min-width: 481px) and (max-width: 767px) {
+.bs-form #note { margin-left: 0px; }
+.bs-form .form-horizontal .control-label { text-align: left; }
+}
+ @media (max-width: 480px) {
+.bs-form .form-horizontal .control-label { float: none; width: auto; padding-top: 0; text-align: left; }
+.bs-form .btn-submit, .bs-form #note { margin-left: 0px; }
+.bs-form .form-horizontal .control-label { text-align: left; }
+}

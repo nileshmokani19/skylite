@@ -1,0 +1,183 @@
+h3.fb-album-heading, h3.fb-account-heading
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    margin: 0px;
+    margin-left: 10px;
+    font-weight: lighter;
+    color: #444;
+}
+
+ul.fb-albums, ul.fb-photos
+{
+    list-style: none;
+    list-style-type: none;
+    font-family: Raleway, helvetica, arial, sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.fb-loading
+{
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    width: 64px;
+    height: 64px;
+    background-image: url('loader.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+li.fb-album, li.fb-photo
+{
+    display: block;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    padding: 0px;
+    background-color: #f7f7f7;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    background-image: url('loader.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position:relative;
+    float:left;
+}
+
+li.fb-album{
+    width: 300px;
+    height: 300px;
+}
+
+    li.fb-album img
+    {
+        display: none;
+    }
+
+div.fb-album-title
+{
+    color: #fff;
+    background-color: #444;
+    position: absolute;
+    top:0;
+    padding: 5px;
+    display:block;
+}
+
+div.fb-album-count
+{
+    background-color: #e5e5e5;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    margin: 6px;
+    display: block;
+    min-width: 34px;
+    border-radius: 5px;
+}
+
+.fb-album-preview
+{
+    display: none;
+    text-align: center;
+}
+
+.fb-album-preview img
+{
+    margin-right:20px;
+}
+
+.fb-photo-thumb, .fb-photo-thumb-link
+{
+    border: none;
+    text-decoration: none;
+}
+
+button.fb-albums-list
+{
+    background-color: rgba(59, 89, 152, 1);
+    border: medium none;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+    button.fb-albums-list:hover
+    {
+        background-color: rgba(59, 89, 152, 0.7);
+    }
+
+.fb-account-info
+{
+    margin-bottom: 10px;
+}
+
+    .fb-account-info img
+    {
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 3px;
+    }
+
+/*Simple lightbox*/
+.fb-preview-overlay
+{
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-image: url('loader.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+
+.fb-preview-content{
+    height:90%;
+    width:100%;
+}
+
+.fb-preview-img, .fb-preview-img-prev, .fb-preview-img-next
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fb-preview-img{
+      height: 100%;
+}
+
+.fb-preview-img-prev, .fb-preview-img-next
+{
+    cursor: pointer;
+    display:none;
+}
+
+.fb-preview-img-prev
+{
+    margin-right: 10px;
+    position:absolute;
+    top:20%;
+    left:10%;
+}
+
+.fb-preview-img-next
+{
+    margin-left: 10px;
+    position:absolute;
+    top:20%;
+    right:10%;
+}
